@@ -47,7 +47,7 @@ public class SteelPumpkinEntity extends PlantDefenderEntity {
 		if (this.hasMetal()) {
 			if(! this.level.isClientSide) {
 
-				this.addEffect(new EffectInstance(Effects.HEAL, 5));
+				this.addEffect(new EffectInstance(Effects.HEAL, 20,5));
 				this.decreaseMetal();
 
 			}}

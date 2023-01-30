@@ -11,7 +11,7 @@ public class FoodItem extends Item{
 
 
 
-	public static final Food ICE_CABBAGE = (new Food.Builder()).nutrition(4).saturationMod(0.5F).effect(new EffectInstance(Effects.MOVEMENT_SLOWDOWN, 20, 1), 1.0f).build();
+	public static final Food ICE_CABBAGE = (new Food.Builder()).nutrition(4).saturationMod(0.5F).effect(new EffectInstance(Effects.MOVEMENT_SLOWDOWN, 80, 1), 1.0f).build();
 
 	public FoodItem(Food food) {
 		super(new Properties().tab(ItemGroup.TAB_FOOD).food(food));

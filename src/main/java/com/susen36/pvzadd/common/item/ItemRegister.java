@@ -11,6 +11,7 @@ import com.susen36.pvzadd.PVZAdd;
 import com.susen36.pvzadd.common.block.BlockRegister;
 import com.susen36.pvzadd.common.entity.EntityRegister;
 import com.susen36.pvzadd.common.impl.plant.AddPlants;
+import com.susen36.pvzadd.common.item.food.FoodItem;
 import com.susen36.pvzadd.common.item.sapling.WisdomSaplingItem;
 import com.susen36.pvzadd.common.item.sapling.XpSaplingItem;
 import com.susen36.pvzadd.common.item.spawn.egg.PVZAddSpawnEggItem;
@@ -30,7 +31,7 @@ public class ItemRegister {
   	 * Items in Food Tab.
   	 */
 
-    public static final RegistryObject<Item> ICE_CABBAGE = ITEMS.register("ice_cabbage", ()->new PVZFoodItem(PVZFoodItem.CABBAGE));
+    public static final RegistryObject<Item> ICE_CABBAGE = ITEMS.register("ice_cabbage", ()->new PVZFoodItem(FoodItem.ICE_CABBAGE));
 
 
     public static final RegistryObject<Item> XP_SAPLING = ITEMS.register("xp_sapling", () -> new XpSaplingItem());
