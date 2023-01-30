@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "minecraft:block/iron_block",
+    "front": "pvzadd:block/steel_pumpkin",
+    "side": "minecraft:block/iron_block"
+  }
+}

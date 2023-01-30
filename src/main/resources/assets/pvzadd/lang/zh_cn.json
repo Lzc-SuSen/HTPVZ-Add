@@ -1,0 +1,45 @@
+{
+  "_comment_1": "物品",
+  "_comment_2": "方块",
+  "_comment_3": "工具提示",
+  "_comment_4": "实体",
+
+  "_comment1": "--------------------------------------------物品-------------------------------------------",
+
+
+  "item.pvzadd.xp_sapling": "经验树苗",
+  "item.pvzadd.wisdom_sapling": "智慧树苗",
+  "item.pvzadd.ice_cabbage": "冰卷心菜",
+
+ "_comment2": "--------------------------------------------方块-------------------------------------------",
+
+  "block.pvzadd.steel_pumpkin": "钢南瓜",
+
+ "_comment3": "--------------------------------------------工具提示-------------------------------------------",
+  
+  "tooltip.pvzadd.xp_sapling.use": "食用以获得经验",
+
+  "_comment4": "--------------------------------------------实体-------------------------------------------",
+
+  "entity.pvzadd.edgar_090547": "埃德加-090547",
+  "item.pvzadd.edgar_090547_spawn_egg": "埃德加-090547刷怪蛋",
+  "entity.pvzadd.airborne_zombie": "空降僵尸",
+  "item.pvzadd.airborne_zombie_spawn_egg": "空降僵尸刷怪蛋",
+  "entity.pvzadd.flower_pot_zombie": "花盆僵尸",
+  "entity.pvzadd.mc_zombie": "MC僵尸",
+  "item.pvzadd.mc_zombie_spawn_egg": "MC僵尸刷怪蛋",
+
+
+  "entity.pvzadd.steel_pumpkin": "钢南瓜",
+  "item.pvzadd.steel_pumpkin_card": "钢南瓜卡",
+  "item.pvzadd.steel_pumpkin_enjoy_card": "钢南瓜体验卡",
+
+ 
+  "entity.pvzadd.ice_cabbage_pult": "冰卷心菜投手",
+  "item.pvzadd.ice_cabbage_pult_spawn_egg": "冰卷心菜投手刷怪蛋",
+  "item.pvzadd.ice_cabbage_pult_card": "冰卷心菜投手卡",
+  "item.pvzadd.ice_cabbage_pult_enjoy_card": "冰卷心菜投手体验卡"
+
+
+
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XBX",
+    "XXX"
+  ],
+  "key": {
+    "B": {
+      "item": "pvz:ice_essence"
+    },
+    "X": {
+      "item": "pvz:cabbage"
+    }
+  },
+  "result": {
+    "item": "pvzadd:ice_cabbage",
+    "count": 8
+  }
+
+}

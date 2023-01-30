@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ACA",
+    "BAB",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item":"pvz:light_essence"
+    },
+    "B": {
+      "item": "pvzadd:xp_sapling"
+    },
+    "C": {
+      "item":"pvz:origin_essence"
+    }
+  },
+  "result": {
+    "item": "pvzadd:wisdom_sapling",
+    "count": 4
+  }
+}

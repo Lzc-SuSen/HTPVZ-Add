@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XAX",
+    "XBX",
+    "XCX"
+  ],
+  "key": {
+    "A": {
+      "item": "pvz:steel_ladder"
+    },
+    "B": {
+      "item": "pvzadd:steel_pumpkin"
+    },
+    "C": {
+      "item": "pvz:blue_card"
+    },
+    "X": {
+      "item": "pvz:defence_essence"
+    }
+  },
+  "result": {
+    "item": "pvzadd:steel_pumpkin_card",
+    "count": 1
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XBX",
+    "XXX"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:carved_pumpkin"
+    },
+    "X": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+
+    "result": {
+      "item": "pvzadd:steel_pumpkin",
+      "count": 1
+    }
+
+}

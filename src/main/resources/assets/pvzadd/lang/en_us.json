@@ -1,0 +1,43 @@
+{
+    "_comment_1": "Item",
+    "_comment_2": "Block",
+    "_comment_3": "ToolTip",
+    "_comment_4": "Entity",
+
+    "_comment1": "--------------------------------------------Item-------------------------------------------",
+
+
+    "item.pvzadd.xp_sapling":"XP Sapling",
+    "item.pvzadd.wisdom_sapling":"Wisdom Sapling",
+    "item.pvzadd.ice_cabbage":"Ice Cabbage",
+
+    "_comment2": "--------------------------------------------Block-------------------------------------------",
+
+    "block.pvzadd.steel_pumpkin":"Steel Pumpkin",
+
+    "_comment3": "--------------------------------------------ToolTip-------------------------------------------",
+
+    "tooltip.pvzadd.xp_sapling.use": "Eat to gain experience",
+
+    "_comment4": "--------------------------------------------Entity-------------------------------------------",
+    "entity.pvzadd.edgar_090547": "Edgar-090547",
+    "item.pvzadd.edgar_090547_spawn_egg": "Edgar-090547 Spawn Egg",
+    "entity.pvzadd.airborne_zombie":"Airborne Zombie",
+    "item.pvzadd.airborne_zombie_spawn_egg":"Airborne Zombie Spawn Egg",
+    "entity.pvzadd.flower_pot_zombie":"Flower pot Zombie",
+    "item.pvzadd.flower_pot_zombie_spawn_egg":"Flower pot Zombie Spawn Egg",
+    "entity.pvzadd.mc_zombie":"MC Zombie",
+    "item.pvzadd.mc_zombie_spawn_egg":"MC Zombie Spawn Egg",
+
+
+    "entity.pvzadd.steel_pumpkin":"Steel Pumpkin",
+    "item.pvzadd.steel_pumpkin_card":"Steel Pumpkin Card",
+    "item.pvzadd.steel_pumpkin_enjoy_card":"Steel Pumpkin Enjoy Card",
+
+  
+    "entity.pvzadd.ice_cabbage_pult":"Ice Cabbage Pult",
+    "item.pvzadd.ice_cabbage_pult_spawn_egg":"Ice Cabbage Pult Spawn Egg",
+    "item.pvzadd.ice_cabbage_pult_card":"Ice Cabbage Pult Card",
+    "item.pvzadd.ice_cabbage_pult_enjoy_card":"Ice Cabbage Pult Enjoy Card"
+
+}

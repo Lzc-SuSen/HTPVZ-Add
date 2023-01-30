@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XXX",
+    "XBX",
+    "XAX"
+  ],
+  "key": {
+
+    "B": {
+      "item": "pvzadd:ice_cabbage"
+    },
+    "A": {
+      "item": "pvz:green_card"
+    },
+    "X": {
+      "item": "pvz:ice_essence"
+    }
+  },
+  "result": {
+    "item": "pvzadd:ice_cabbage_pult_card",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "pvzadd:xp_sapling"
+  },
+  "result": "minecraft:dead_bush",
+  "experience": 800,
+  "cookingtime": 100
+}

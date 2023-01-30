@@ -1,0 +1,24 @@
+modLoader="javafml" 
+license="GNU LESSER GENERAL PUBLIC LICENSE" 
+loaderVersion="[36,)"
+
+[[mods]]
+modId="pvzadd"
+version="0.4.7"
+displayName="HTPVZ:Add"
+authors="SuSen36"
+logoFile="logo.png"
+description="A mod that brings expand content to HTPVZ !"
+
+
+[[dependencies.pvzadd]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    
+[[dependencies.pvzadd]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16,)"
+    ordering="NONE"
+    side="BOTH"
