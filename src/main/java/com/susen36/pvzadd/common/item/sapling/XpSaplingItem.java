@@ -59,7 +59,7 @@ public class XpSaplingItem extends Item {
 
 	@Override
 	public void appendHoverText(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
-		tooltip.add(new TranslationTextComponent("tooltip.pvz.sun_storage_sapling.use").withStyle(TextFormatting.GREEN));
+		tooltip.add(new TranslationTextComponent("tooltip.pvzadd.xp_sapling.use").withStyle(TextFormatting.GREEN));
 
       }
 	
