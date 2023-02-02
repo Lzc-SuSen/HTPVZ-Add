@@ -10,6 +10,7 @@ import com.susen36.pvzadd.client.model.entity.zombie.add.AirborneZombieModel;
 import com.susen36.pvzadd.client.model.entity.zombie.add.FlowerPotZombieModel;
 import com.susen36.pvzadd.client.model.entity.zombie.add.MCZombieModel;
 import com.susen36.pvzadd.common.entity.EntityRegister;
+import com.susen36.pvzadd.common.misc.AddLoot;
 import net.minecraft.util.ResourceLocation;
 
 import java.util.ArrayList;
@@ -28,7 +29,7 @@ public final class AddZombies extends com.hungteen.pvz.common.impl.zombie.Zombie
 		    .rank(RankTypes.PURPLE).xp(50)
 			.entityType(() -> EntityRegister.EDGAR_090547.get())
 			.zombieModel(() -> EdgarRobotModel::new).scale(0.5F)
-			//.loot(PVZAddLoot.EDGAR_090547)
+			.loot(AddLoot.EDGAR_090547)
 			.eatCommonSkill(Arrays.asList())
 	);
 
@@ -38,6 +39,7 @@ public final class AddZombies extends com.hungteen.pvz.common.impl.zombie.Zombie
 			.rank(RankTypes.GREEN).xp(10)
 			.entityType(() -> EntityRegister.FLOWER_POT_ZOMBIE.get())
 			.zombieModel(() -> FlowerPotZombieModel::new).scale(0.5F)
+			.loot(AddLoot.FLOWER_POT_ZOMBIE)
 			.eatCommonSkill(Arrays.asList())
 	);
 
@@ -46,6 +48,7 @@ public final class AddZombies extends com.hungteen.pvz.common.impl.zombie.Zombie
 			.rank(RankTypes.GREEN).xp(10)
 			.entityType(() -> EntityRegister.AIRBORNE_ZOMBIE.get())
 			.zombieModel(() -> AirborneZombieModel::new).scale(0.5F)
+			.loot(AddLoot.AirborneZombieEntity)
 			.eatCommonSkill(Arrays.asList())
 	);
 
@@ -53,8 +56,18 @@ public final class AddZombies extends com.hungteen.pvz.common.impl.zombie.Zombie
 			.rank(RankTypes.WHITE).xp(5)
 			.entityType(() -> EntityRegister.MC_ZOMBIE.get())
 			.zombieModel(() -> MCZombieModel::new).scale(0.5F)
+			.loot(AddLoot.MC_ZOMBIE)
 			.eatCommonSkill(Arrays.asList())
 	);
+
+	public static final ZombieType STEEL_PUMPKIN_ZOMBIE = new AddZombies("steel_pumpkin_zombie", new ZombieFeatures()
+			.rank(RankTypes.BLUE).xp(25)
+			.entityType(() -> EntityRegister.STEEL_PUMPKIN_ZOMBIE.get())
+			.zombieModel(() -> MCZombieModel::new).scale(0.5F)
+			//.loot(AddLoot.MC_ZOMBIE)
+			.eatCommonSkill(Arrays.asList())
+	);
+
 	public static void register() {
 		registerZombies(LIST);
 	}

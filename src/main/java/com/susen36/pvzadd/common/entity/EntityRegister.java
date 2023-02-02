@@ -9,17 +9,11 @@ import com.susen36.pvzadd.PVZAdd;
 import com.susen36.pvzadd.client.render.entity.bullet.IceCabbageRender;
 import com.susen36.pvzadd.client.render.entity.plant.defence.SteelPumpkinRender;
 import com.susen36.pvzadd.client.render.entity.plant.ice.IceCabbagePultRender;
-import com.susen36.pvzadd.client.render.entity.zombie.add.AirborneZombieRender;
-import com.susen36.pvzadd.client.render.entity.zombie.add.Edgar090547Render;
-import com.susen36.pvzadd.client.render.entity.zombie.add.FlowerPotZombieRender;
-import com.susen36.pvzadd.client.render.entity.zombie.add.MCZombieRender;
+import com.susen36.pvzadd.client.render.entity.zombie.add.*;
 import com.susen36.pvzadd.common.entity.bullet.itembullet.IceCabbageEntity;
 import com.susen36.pvzadd.common.entity.plant.defence.SteelPumpkinEntity;
 import com.susen36.pvzadd.common.entity.plant.ice.IceCabbagePultEntity;
-import com.susen36.pvzadd.common.entity.zombie.add.AirborneZombieEntity;
-import com.susen36.pvzadd.common.entity.zombie.add.Edgar090547Entity;
-import com.susen36.pvzadd.common.entity.zombie.add.FlowerPotZombieEntity;
-import com.susen36.pvzadd.common.entity.zombie.add.MCZombieEntity;
+import com.susen36.pvzadd.common.entity.zombie.add.*;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
@@ -68,6 +62,8 @@ public class EntityRegister {
 
 	public static final RegistryObject<EntityType<MCZombieEntity>> MC_ZOMBIE = registerZombieEntityType(MCZombieEntity::new, "mc_zombie");
 
+	public static final RegistryObject<EntityType<SteelPumpkinZombieEntity>> STEEL_PUMPKIN_ZOMBIE = registerZombieEntityType(SteelPumpkinZombieEntity::new, "steel_pumpkin_zombie");
+
 	/**ZA
 	 * plants
 	 */
@@ -85,6 +81,8 @@ public class EntityRegister {
 		RenderingRegistry.registerEntityRenderingHandler(AIRBORNE_ZOMBIE.get(), AirborneZombieRender::new);
 
 		RenderingRegistry.registerEntityRenderingHandler(MC_ZOMBIE.get(), MCZombieRender::new);
+
+		RenderingRegistry.registerEntityRenderingHandler(STEEL_PUMPKIN_ZOMBIE.get(), SteelPumpkinZombieRender::new);
 
 		// plants
 

@@ -3,6 +3,7 @@ package com.susen36.pvzadd.common.entity.plant.defence;
 
 import com.hungteen.pvz.api.types.IPlantType;
 import com.hungteen.pvz.common.entity.plant.base.PlantDefenderEntity;
+import com.hungteen.pvz.common.misc.sound.SoundRegister;
 import com.susen36.pvzadd.common.impl.plant.AddPlants;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.EntitySize;
@@ -10,6 +11,8 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Pose;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
+import net.minecraft.util.DamageSource;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
 
@@ -53,5 +56,9 @@ public class SteelPumpkinEntity extends PlantDefenderEntity {
 			}}
 
 		super.aiStep();
+	}
+	@Override
+	public SoundEvent getHurtSound(DamageSource damageSourceIn) {
+		return SoundRegister.METAL_HIT.get();
 	}
 }
