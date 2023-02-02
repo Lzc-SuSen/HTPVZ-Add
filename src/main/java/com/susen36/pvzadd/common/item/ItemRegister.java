@@ -87,6 +87,9 @@ public class ItemRegister {
 
     public static final RegistryObject<Item> GRAZE_THE_ROOF = ITEMS.register("graze_the_roof", () -> new MusicDiscItem(0, SoundRegister.GRAZE_THE_ROOF, new Item.Properties().stacksTo(1).tab(PVZItemGroups.PVZ_USEFUL).rarity(Rarity.RARE)));
 
+    public static final RegistryObject<Item> ZOMBIE_ON_YOUR_LAWN = ITEMS.register("zombie_on_your_lawn", () -> new MusicDiscItem(0, SoundRegister.ZOMBIE_ON_YOUR_LAWN, new Item.Properties().stacksTo(1).tab(PVZItemGroups.PVZ_USEFUL).rarity(Rarity.RARE)));
+
+    public static final RegistryObject<Item> ZOMBIE_ON_YOUR_LAWN_TEST = ITEMS.register("zombie_on_your_lawn_test", () -> new MusicDiscItem(0, com.hungteen.pvz.common.misc.sound.SoundRegister.ZOMBIE_ON_YOUR_LAWN, new Item.Properties().stacksTo(1).tab(PVZItemGroups.PVZ_USEFUL).rarity(Rarity.RARE)));
 
     /**
      * register spawn eggs
