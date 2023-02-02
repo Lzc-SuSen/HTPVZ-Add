@@ -11,7 +11,7 @@
     },
     "B": {
       "tag": "minecraft:saplings",
-      "count": 3
+      "count": 1
     },
     "C": {
       "item":"pvz:origin_essence"
@@ -19,6 +19,6 @@
   },
   "result": {
     "item": "pvzadd:xp_sapling",
-    "count": 3
+    "count": 1
   }
 }

@@ -3,6 +3,7 @@
     "_comment_2": "Block",
     "_comment_3": "ToolTip",
     "_comment_4": "Entity",
+    "_comment_5": "challenges",
 
     "_comment1": "--------------------------------------------Item-------------------------------------------",
 
@@ -28,7 +29,8 @@
     "item.pvzadd.flower_pot_zombie_spawn_egg":"Flower pot Zombie Spawn Egg",
     "entity.pvzadd.mc_zombie":"MC Zombie",
     "item.pvzadd.mc_zombie_spawn_egg":"MC Zombie Spawn Egg",
-
+    "entity.pvzadd.steel_pumpkin_zombie":"Steel Pumpkin Zombie",
+    "item.pvzadd.steel_pumpkin_zombie_spawn_egg":"Steel Pumpkin Zombie Spawn Egg",
 
     "entity.pvzadd.steel_pumpkin":"Steel Pumpkin",
     "item.pvzadd.steel_pumpkin_card":"Steel Pumpkin Card",
@@ -38,6 +40,9 @@
     "entity.pvzadd.ice_cabbage_pult":"Ice Cabbage Pult",
     "item.pvzadd.ice_cabbage_pult_spawn_egg":"Ice Cabbage Pult Spawn Egg",
     "item.pvzadd.ice_cabbage_pult_card":"Ice Cabbage Pult Card",
-    "item.pvzadd.ice_cabbage_pult_enjoy_card":"Ice Cabbage Pult Enjoy Card"
+    "item.pvzadd.ice_cabbage_pult_enjoy_card":"Ice Cabbage Pult Enjoy Card",
+    "_comment19": "--------------------------------------------挑战-------------------------------------------",
+
+    "challenge.pvzadd.extra.msg1": "Additional challenges of PVZAdd"
 
 }

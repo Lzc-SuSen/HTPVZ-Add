@@ -3,6 +3,7 @@
   "_comment_2": "方块",
   "_comment_3": "工具提示",
   "_comment_4": "实体",
+  "_comment_5": "挑战",
 
   "_comment1": "--------------------------------------------物品-------------------------------------------",
 
@@ -26,8 +27,11 @@
   "entity.pvzadd.airborne_zombie": "空降僵尸",
   "item.pvzadd.airborne_zombie_spawn_egg": "空降僵尸刷怪蛋",
   "entity.pvzadd.flower_pot_zombie": "花盆僵尸",
+  "item.pvzadd.flower_pot_zombie_spawn_egg": "花盆僵尸刷怪蛋",
   "entity.pvzadd.mc_zombie": "MC僵尸",
   "item.pvzadd.mc_zombie_spawn_egg": "MC僵尸刷怪蛋",
+  "entity.pvzadd.steel_pumpkin_zombie":"钢南瓜僵尸",
+  "item.pvzadd.steel_pumpkin_zombie_spawn_egg":"钢南瓜僵尸刷怪蛋",
 
 
   "entity.pvzadd.steel_pumpkin": "钢南瓜",
@@ -38,8 +42,10 @@
   "entity.pvzadd.ice_cabbage_pult": "冰卷心菜投手",
   "item.pvzadd.ice_cabbage_pult_spawn_egg": "冰卷心菜投手刷怪蛋",
   "item.pvzadd.ice_cabbage_pult_card": "冰卷心菜投手卡",
-  "item.pvzadd.ice_cabbage_pult_enjoy_card": "冰卷心菜投手体验卡"
+  "item.pvzadd.ice_cabbage_pult_enjoy_card": "冰卷心菜投手体验卡",
 
+  "_comment19": "--------------------------------------------挑战-------------------------------------------",
 
+  "challenge.pvzadd.extra.msg1": "PVZAddd的附加挑战"
 
 }

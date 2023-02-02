@@ -1,0 +1,35 @@
+{
+
+  "loonboon": {
+    "sounds": [
+      {
+        "name": "pvzadd:music/loonboon",
+        "stream": true
+      }
+    ]
+  },
+  "brainiac_maniac": {
+    "sounds": [
+      {
+        "name": "pvzadd:music/brainiac_maniac",
+        "stream": true
+      }
+    ]
+  },
+  "graze_the_roof": {
+    "sounds": [
+      {
+        "name": "pvzadd:music/graze_the_roof",
+        "stream": true
+      }
+    ]
+  },
+  "watery_graves": {
+    "sounds": [
+      {
+        "name": "pvzadd:music/watery_graves",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,147 @@
+
+{
+  "authors": [
+    "susen36"
+  ],
+  "tags": [
+    "overworld"
+  ],
+  "messages":[
+    {
+      "title":"challenge.pvzadd.extra.msg1",
+      "color":114514
+    }
+  ],
+  "bar_color": "red",
+  "trade_price": 275,
+  "trade_weight": 70,
+  "recommend_level": 45,
+  "placement": {
+    "center": {
+      "radius": 10,
+      "ground": true
+    }
+  },
+  "waves": [
+    {
+      "spawns": [
+        {
+          "entity_type": "pvzadd:mc_zombie",
+          "spawn_tick": 20,
+          "spawn_amount": {
+            "random": {
+              "min": 15,
+              "max": 20
+            }
+          }
+        }
+      ],
+      "duration": 850
+    },
+
+    {
+      "spawns": [
+        {
+          "entity_type": "pvzadd:flower_pot_zombie",
+          "spawn_tick": 20,
+          "placement": {
+            "center": {
+              "radius": 1,
+              "ground": true
+            }
+          },
+          "spawn_amount": {
+            "random": {
+              "min": 3,
+              "max": 4
+            }
+          }
+        }
+      ],
+      "duration": 600
+    },
+    {
+      "spawns": [
+        {
+          "entity_type": "pvzadd:edgar_090547",
+          "spawn_tick": 20,
+          "placement": {
+            "center": {
+              "radius": 1,
+              "ground": true
+            }
+          },
+          "spawn_amount": {
+            "count": 2
+          }
+        }
+      ],
+      "duration": 800
+    },
+    {
+      "spawns": [
+        {
+          "entity_type": "pvzadd:steel_pumpkin_zombie",
+          "spawn_tick": 20,
+          "placement": {
+            "center": {
+              "radius": 1,
+              "ground": true
+            }
+          },
+          "spawn_amount": {
+            "random": {
+              "min": 3,
+              "max": 4
+            }
+          }
+        }
+      ],
+      "duration": 800
+    }
+  ],
+
+  "rewards": {
+    "unlocks": [
+      "pvzadd:steel_pumpkin",
+      "pvzadd:ice_cabbage_pult"
+    ],
+    "items": [
+      {
+        "item": "pvzadd:steel_pumpkin_enjoy_card",
+        "amount": {
+          "count": 2
+        }
+      },
+
+      {
+        "item": "pvzadd:ice_cabbage_pult_enjoy_card",
+        "amount": {
+          "random": {
+            "min": 2,
+            "max": 5
+          }
+        }
+      },
+
+      {
+        "item": "pvz:cactus_enjoy_card",
+        "amount": {
+          "random": {
+            "min": 1,
+            "max": 2
+          }
+        }
+      },
+      {
+        "item": "pvzadd:xp_sapling",
+        "amount": {
+          "random": {
+            "min": 1,
+            "max": 2
+          }
+        }
+      }
+    ]
+  }
+}
