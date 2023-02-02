@@ -31,5 +31,13 @@
         "stream": true
       }
     ]
+  },
+  "zombie_on_your_lawn": {
+    "sounds": [
+      {
+        "name": "pvzadd:music/zombie_on_your_lawn",
+        "stream": true
+      }
+    ]
   }
 }
