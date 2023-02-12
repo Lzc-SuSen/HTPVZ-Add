@@ -13,7 +13,7 @@ public class SteelPumpkinRender extends PVZPlantRender<SteelPumpkinEntity>
 {
 
 	public SteelPumpkinRender(EntityRendererManager rendererManager) {
-		super(rendererManager, new SteelPumpkinModel(), 0.6f);
+		super(rendererManager, new SteelPumpkinModel(), 0.7f);
 	}
 
 }

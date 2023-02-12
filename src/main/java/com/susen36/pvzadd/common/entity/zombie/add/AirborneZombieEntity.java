@@ -102,14 +102,11 @@ public class AirborneZombieEntity extends PVZZombieEntity {
         return super.canClimbWalls() && ! this.hasLine();
     }
 
-   // @Override
-   // public boolean canBeAttractedBy(ICanAttract defender) {
-      //  return ! this.hasLine();
-   // }
+
 
     @Override
     public float getLife() {
-        return 40;
+        return 30;
     }
 
     @Override

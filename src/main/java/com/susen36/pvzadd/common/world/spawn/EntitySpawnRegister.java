@@ -23,6 +23,9 @@ public class EntitySpawnRegister {
 		EntitySpawnPlacementRegistry.register(EntityRegister.FLOWER_POT_ZOMBIE.get(), PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, SpawnChecker::canZombieSpawn);
 		EntitySpawnPlacementRegistry.register(EntityRegister.AIRBORNE_ZOMBIE.get(), PlacementType.NO_RESTRICTIONS, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, SpawnChecker::canZombieSpawn);
 		EntitySpawnPlacementRegistry.register(EntityRegister.MC_ZOMBIE.get(), PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, SpawnChecker::canZombieSpawn);
+		EntitySpawnPlacementRegistry.register(EntityRegister.STEEL_PUMPKIN_ZOMBIE.get(), PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, SpawnChecker::canZombieSpawn);
+		EntitySpawnPlacementRegistry.register(EntityRegister.TARGET_ARROW_ZOMBIE.get(), PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, SpawnChecker::canZombieSpawn);
+
 
 	}
 

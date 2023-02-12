@@ -267,7 +267,8 @@ public class Edgar090547Model<T extends Edgar090547Entity> extends EntityModel<T
 			this.left_leg.xRot = 0;
 			this.up.xRot = 0;
 		}
-			this.angry.visible = entity.isSad;
+		this.imp.visible = entity.hasImp();
+
 	}
 
 	@Override

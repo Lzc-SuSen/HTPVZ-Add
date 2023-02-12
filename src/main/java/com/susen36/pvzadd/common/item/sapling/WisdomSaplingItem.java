@@ -23,7 +23,7 @@ public class WisdomSaplingItem extends XpSaplingItem {
                              {
                                 l.getPlayerData().addResource(Resources.TREE_XP, amount);
                                 PlayerUtil.playClientSound(player, SoundEvents.EXPERIENCE_BOTTLE_THROW);
-                            }
+                                 stack.shrink(1); }
                         }
                 );}}
         return stack;

@@ -36,7 +36,7 @@ public class IceCabbagePultEntity extends CabbagePultEntity implements IIceEffec
 	}
 
 
-	private static final int FROZEN_TICK = 40;
+	private static final int FROZEN_TICK = 35;
 
 	public int getColdDuration() {
 		return 60;

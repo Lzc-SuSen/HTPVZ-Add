@@ -14,50 +14,30 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 
 public class SteelPumpkinModel extends PVZPlantModel<SteelPumpkinEntity> {
 	private final ModelRenderer total;
-	private final ModelRenderer floor;
-	private final ModelRenderer total2;
-	private final ModelRenderer getPlantWholeBody;
+	private final ModelRenderer inside;
 
 	public SteelPumpkinModel() {
 		texWidth = 128;
 		texHeight = 128;
 
 		total = new ModelRenderer(this);
-		total.setPos(0.0F, -5.0F, 0.0F);
+		total.setPos(0.0F, 24.0F, 0.0F);
+		setRotationAngle(total, 0.0F, 1.5708F, 0.0F);
+		total.texOffs(0, 0).addBox(-8.5F, -10.0F, -8.5F, 17.0F, 10.0F, 17.0F, 0.0F, false);
+		total.texOffs(2, 27).addBox(8.0F, -6.0F, -8.5F, 1.0F, 6.0F, 17.0F, 0.0F, false);
+		total.texOffs(0, 86).addBox(-8.75F, -26.0F, -8.0F, 1.0F, 26.0F, 16.0F, 0.0F, false);
+		total.texOffs(34, 97).addBox(-8.75F, -15.0F, -8.0F, 1.0F, 15.0F, 16.0F, 0.1F, false);
 
-
-		floor = new ModelRenderer(this);
-		floor.setPos(0.0F, 0.0F, 0.0F);
-		total.addChild(floor);
-		floor.texOffs(94, 85).addBox(-9.0F, 20.0F, -20.0F, 18.0F, 2.0F, 4.0F, 0.0F, false);
-		floor.texOffs(94, 79).addBox(-9.0F, 12.0F, -20.0F, 18.0F, 2.0F, 4.0F, 0.0F, false);
-		floor.texOffs(90, 91).addBox(-9.0F, 4.0F, -20.0F, 18.0F, 2.0F, 4.0F, 0.0F, false);
-		floor.texOffs(64, 73).addBox(-9.0F, -4.0F, -20.0F, 18.0F, 2.0F, 4.0F, 0.0F, false);
-		floor.texOffs(64, 67).addBox(-9.0F, -12.0F, -20.0F, 18.0F, 2.0F, 4.0F, 0.0F, false);
-		floor.texOffs(0, 79).addBox(9.0F, -21.0F, -20.0F, 3.0F, 50.0F, 4.0F, 0.1F, false);
-		floor.texOffs(14, 79).addBox(-12.0F, -21.0F, -20.0F, 3.0F, 50.0F, 4.0F, 0.1F, false);
-
-		total2 = new ModelRenderer(this);
-		total2.setPos(0.0F, 29.0F, 0.0F);
-		total.addChild(total2);
-		total2.texOffs(0, 0).addBox(-15.0F, -18.0F, -19.0F, 3.0F, 18.0F, 3.0F, 0.0F, false);
-		total2.texOffs(68, 112).addBox(-6.0F, -19.0F, -9.0F, 15.0F, 1.0F, 15.0F, 0.0F, false);
-		total2.texOffs(64, 50).addBox(-16.0F, -17.0F, -16.0F, 32.0F, 16.0F, 1.0F, 0.0F, false);
-		total2.texOffs(64, 33).addBox(-16.0F, -17.0F, 15.0F, 32.0F, 16.0F, 1.0F, 0.0F, false);
-		total2.texOffs(32, 49).addBox(-16.0F, -17.0F, -15.0F, 1.0F, 16.0F, 30.0F, 0.0F, false);
-		total2.texOffs(0, 33).addBox(15.0F, -17.0F, -15.0F, 1.0F, 16.0F, 30.0F, 0.0F, false);
-		total2.texOffs(0, 0).addBox(-16.0F, -1.0F, -16.0F, 32.0F, 1.0F, 32.0F, 0.0F, false);
-		total2.texOffs(0, 0).addBox(-15.0F, -18.0F, -15.0F, 30.0F, 1.0F, 30.0F, 0.0F, false);
-		total2.texOffs(38, 116).addBox(-2.0F, -23.5F, -5.0F, 7.0F, 5.0F, 7.0F, 0.0F, false);
-
-		getPlantWholeBody = new ModelRenderer(this);
-		getPlantWholeBody.setPos(0.0F, 0.0F, 0.0F);
-
+		inside = new ModelRenderer(this);
+		inside.setPos(0.0F, 0.0F, 0.0F);
+		total.addChild(inside);
+		inside.texOffs(0, 50).addBox(-8.0F, -9.5F, -8.0F, 16.0F, 9.0F, 16.0F, 0.0F, false);
 	}
 
 	@Override
 	public void setupAnim(SteelPumpkinEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch){
-
+		final boolean isSolid = entity.isSolid();
+		this.inside.visible = isSolid;
 	}
 
 	@Override

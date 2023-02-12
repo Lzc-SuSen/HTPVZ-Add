@@ -8,7 +8,6 @@ import com.susen36.pvzadd.common.impl.zombie.add.AddZombies;
 import com.susen36.pvzadd.common.item.ItemRegister;
 import com.susen36.pvzadd.common.item.spawn.egg.PVZAddSpawnEggItem;
 import com.susen36.pvzadd.common.misc.MiscRegister;
-import com.susen36.pvzadd.common.misc.sound.SoundRegister;
 import net.minecraft.entity.EntityType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
@@ -31,16 +30,7 @@ public class PVZAdd {
 
 	
     public PVZAdd() {
-  //	{
-//		final Pair<PVZConfig.Common, ForgeConfigSpec> specPair = new ForgeConfigSpec.Builder().configure(PVZConfig.Common::new);
-  //		ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, specPair.getRight());
-  //		PVZConfig.COMMON_CONFIG = specPair.getLeft();
-  //	}
-  //	{
-  //		final Pair<PVZConfig.Client, ForgeConfigSpec> specPair = new ForgeConfigSpec.Builder().configure(PVZConfig.Client::new);
-  //		ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, specPair.getRight());
-  //		PVZConfig.CLIENT_CONFIG = specPair.getLeft();
-  //	}
+
     	
     	IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
@@ -48,11 +38,6 @@ public class PVZAdd {
 		ItemRegister.ITEMS.register(bus);
 		BlockRegister.BLOCKS.register(bus);
 		EntityRegister.ENTITY_TYPES.register(bus);
-		SoundRegister.SOUNDS.register(bus);
-
-
-
-
 		//register plants.
 		AddPlants.register();
 		//register zombies.

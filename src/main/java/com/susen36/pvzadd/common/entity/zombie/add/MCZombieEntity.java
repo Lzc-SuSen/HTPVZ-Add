@@ -19,9 +19,7 @@ public class MCZombieEntity extends NormalZombieEntity {
     }
 
 
-   // public static AttributeModifierMap.MutableAttribute createAttributes() {
-   //     return MobEntity.createMobAttributes().add(Attributes.ARMOR, 2.0D);
-   // }
+
     @Override
     public float getLife() {
         return 20;

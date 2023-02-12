@@ -1,10 +1,11 @@
 package com.susen36.pvzadd.common.entity.zombie.add;
 
-import com.hungteen.pvz.common.entity.plant.base.PlantShooterEntity;
+import com.hungteen.pvz.common.entity.plant.base.PlantPultEntity;
 import com.hungteen.pvz.common.entity.zombie.base.DefenceZombieEntity;
 import com.hungteen.pvz.common.entity.zombie.body.ZombieDropBodyEntity;
 import com.hungteen.pvz.common.entity.zombie.part.PVZHealthPartEntity;
 import com.hungteen.pvz.common.impl.zombie.ZombieType;
+import com.hungteen.pvz.common.misc.PVZEntityDamageSource;
 import com.hungteen.pvz.common.misc.sound.SoundRegister;
 import com.hungteen.pvz.utils.EffectUtil;
 import com.hungteen.pvz.utils.EntityUtil;
@@ -14,15 +15,32 @@ import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.potion.Effects;
+import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.world.World;
 
-public class FlowerPotZombieEntity extends DefenceZombieEntity {
+public class TargetArrowZombieEntity extends DefenceZombieEntity {
 
-    public FlowerPotZombieEntity(EntityType<? extends CreatureEntity> type, World worldIn) {
+    public TargetArrowZombieEntity(EntityType<? extends CreatureEntity> type, World worldIn) {
         super(type, worldIn);
     }
+
+
+
+
+
+
+
+
+
+
+    @Override
+    public SoundEvent getPartHurtSound() {
+        return SoundEvents.WOOL_FALL;
+    }
+
+
 
     @Override
     protected void initAttributes() {
@@ -53,13 +71,13 @@ public class FlowerPotZombieEntity extends DefenceZombieEntity {
 
     @Override
     public boolean canLostHand() {
-        return super.canLostHand() && this.isAngry();
+        return super.canLostHand() && !this.canPartsExist();
     }
 
     @Override
     protected void setBodyStates(ZombieDropBodyEntity body) {
         super.setBodyStates(body);
-        body.setHandDefence(! this.isAngry());
+        body.setHandDefence(this.canPartsExist());
     }
 
     @Override
@@ -73,11 +91,25 @@ public class FlowerPotZombieEntity extends DefenceZombieEntity {
     }
 
 
+    @Override
+    public boolean hurt(DamageSource source, float amount) {
+        if(this.canPartsExist() && this.canHit(source)){
 
+            return false;
+        }
+        return super.hurt(source, amount);
+    }
 
+    private boolean canHit(DamageSource source) {
+
+        if(source instanceof PVZEntityDamageSource) {
+            return ((PVZEntityDamageSource) source).isParabola();
+        }
+        return false;
+    }
     @Override
     public boolean canBeTargetBy(LivingEntity living) {
-        if(living instanceof PlantShooterEntity && !this.isAngry()){
+        if(living instanceof PlantPultEntity && this.canPartsExist()){
             return false;
         }
         return super.canBeTargetBy(living);
@@ -90,16 +122,10 @@ public class FlowerPotZombieEntity extends DefenceZombieEntity {
 
     @Override
     public float getOuterLife() {
-        return 20;
+        return 24;
     }
-
-    public boolean isAngry() {
-        return ! this.canPartsExist();
-    }
-
     @Override
     public ZombieType getZombieType() {
-        return AddZombies.FLOWER_POT_ZOMBIE;
+        return AddZombies.TARGET_ARROW_ZOMBIE;
     }
-
 }

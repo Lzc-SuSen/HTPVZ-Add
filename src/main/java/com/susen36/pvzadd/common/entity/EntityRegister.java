@@ -41,13 +41,14 @@ public class EntityRegister {
 
 	public static final RegistryObject<EntityType<IceCabbagePultEntity>> ICE_CABBAGE_PULT = registerPlantEntityType(IceCabbagePultEntity::new, "ice_cabbage_pult");
 
+	//public static final RegistryObject<EntityType<BargeNutEntity>> BARGE_NUT = registerPlantEntityType(BargeNutEntity::new, "barge_nut");
+	//public static final RegistryObject<EntityType<BargeNutEntity>> BARGE_NUT = registerEntityType(BargeNutEntity::new, "barge_nut", EntityClassification.MISC);
 
 
 	/**
 	 * bullets
 	 */
 	public static final RegistryObject<EntityType<IceCabbageEntity>> ICE_CABBAGE = registerEntityType(IceCabbageEntity::new, "ice_cabbage", EntityClassification.MISC);
-
 
 
 	/*
@@ -64,13 +65,17 @@ public class EntityRegister {
 
 	public static final RegistryObject<EntityType<SteelPumpkinZombieEntity>> STEEL_PUMPKIN_ZOMBIE = registerZombieEntityType(SteelPumpkinZombieEntity::new, "steel_pumpkin_zombie");
 
-	/**ZA
+	public static final RegistryObject<EntityType<TargetArrowZombieEntity>> TARGET_ARROW_ZOMBIE = registerZombieEntityType(TargetArrowZombieEntity::new, "target_arrow_zombie");
+
+	/*
 	 * plants
 	 */
       //////////////////////////////////////////////////
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void onClientSetUpEvent(FMLClientSetupEvent event) {
+		//bullets
+
 		RenderingRegistry.registerEntityRenderingHandler(ICE_CABBAGE.get(), IceCabbageRender::new);
 
 		// zombies
@@ -84,11 +89,15 @@ public class EntityRegister {
 
 		RenderingRegistry.registerEntityRenderingHandler(STEEL_PUMPKIN_ZOMBIE.get(), SteelPumpkinZombieRender::new);
 
+		RenderingRegistry.registerEntityRenderingHandler(TARGET_ARROW_ZOMBIE.get(), TargetArrowZombieRender::new);
+
 		// plants
 
 		RenderingRegistry.registerEntityRenderingHandler(STEEL_PUMPKIN.get(), SteelPumpkinRender::new);
 
 		RenderingRegistry.registerEntityRenderingHandler(ICE_CABBAGE_PULT.get(), IceCabbagePultRender::new);
+
+		//RenderingRegistry.registerEntityRenderingHandler(BARGE_NUT.get(), BargeNutRender::new);
 
 	}
 

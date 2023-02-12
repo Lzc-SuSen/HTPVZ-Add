@@ -31,6 +31,7 @@ public class XpSaplingItem extends Item {
 	}
 
 
+
 	@Override
 	public ActionResult<ItemStack> use(World worldIn, PlayerEntity playerIn, Hand handIn) {
 		playerIn.startUsingItem(handIn);
@@ -47,7 +48,7 @@ public class XpSaplingItem extends Item {
 					 {
 					l.getPlayerData().addResource(Resources.TREE_XP, amount);
 					PlayerUtil.playClientSound(player, SoundEvents.EXPERIENCE_BOTTLE_THROW);
-				}
+					stack.shrink(1);}
 					}
 				);}}
 		return stack;

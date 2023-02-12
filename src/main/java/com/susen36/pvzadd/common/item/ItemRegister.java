@@ -15,12 +15,11 @@ import com.susen36.pvzadd.common.item.food.FoodItem;
 import com.susen36.pvzadd.common.item.sapling.WisdomSaplingItem;
 import com.susen36.pvzadd.common.item.sapling.XpSaplingItem;
 import com.susen36.pvzadd.common.item.spawn.egg.PVZAddSpawnEggItem;
-import com.susen36.pvzadd.common.misc.sound.SoundRegister;
+import com.susen36.pvzadd.common.item.spawn.token.DaveToken;
+import com.susen36.pvzadd.common.item.spawn.token.SunDaveToken;
 import net.minecraft.entity.EntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.MusicDiscItem;
-import net.minecraft.item.Rarity;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -42,6 +41,11 @@ public class ItemRegister {
     public static final RegistryObject<Item> WISDOM_SAPLING = ITEMS.register("wisdom_sapling", () -> new WisdomSaplingItem());
 
 
+    /* token */
+    public static final RegistryObject<Item> DAVE_TOKEN = ITEMS.register("dave_token", () -> new DaveToken());
+
+    public static final RegistryObject<Item> SUN_DAVE_TOKEN = ITEMS.register("sun_dave_token", () -> new SunDaveToken());
+
     /* spawn eggs */
 
 
@@ -61,6 +65,12 @@ public class ItemRegister {
     public static final RegistryObject<PVZAddSpawnEggItem> STEEL_PUMPKIN_ZOMBIE_SPAWN_EGG = registerSpawnEgg("steel_pumpkin_zombie",
             EntityRegister.STEEL_PUMPKIN_ZOMBIE,  Colors.ZOMBIE_COLOR, new Item.Properties().tab(PVZItemGroups.PVZ_MISC));
 
+    public static final RegistryObject<PVZAddSpawnEggItem> TARGET_ARROW_ZOMBIE_SPAWN_EGG = registerSpawnEgg("target_arrow_zombie",
+            EntityRegister.TARGET_ARROW_ZOMBIE,  Colors.ZOMBIE_COLOR, new Item.Properties().tab(PVZItemGroups.PVZ_MISC));
+
+   // public static final RegistryObject<PVZAddSpawnEggItem> BARGE_NUT = registerSpawnEgg("barge_nut",
+   //         EntityRegister.BARGE_NUT,  Colors.ZOMBIE_COLOR, new Item.Properties().tab(PVZItemGroups.PVZ_MISC));
+   //
 
     /*
   	 * Items in Plant Cards Tab.
@@ -71,25 +81,16 @@ public class ItemRegister {
     public static final RegistryObject<PlantCardItem> ICE_CABBAGE_PULT_CARD = registerCard((IPlantType) AddPlants.ICE_CABBAGE_PULT, false);
     public static final RegistryObject<PlantCardItem> ICE_CABBAGE_PULT_ENJOY_CARD = registerCard((IPlantType) AddPlants.ICE_CABBAGE_PULT, true);
 
+    //public static final RegistryObject<PlantCardItem> BARGE_NUT_PULT_CARD = registerCard((IPlantType) AddPlants.BARGE_NUT, false);
+    //public static final RegistryObject<PlantCardItem> BARGE_NUT_PULT_ENJOY_CARD = registerCard((IPlantType) AddPlants.BARGE_NUT, true);
 
     //block
 
     public static final RegistryObject<BlockItem> STEEL_PUMPKIN = ITEMS.register("steel_pumpkin",() -> new BlockItem(BlockRegister.STEEL_PUMPKIN.get(), new Item.Properties().tab(PVZItemGroups.PVZ_MISC)));
 
 
-    // music disc
-
-    public static final RegistryObject<Item> WATRY_GRAVES = ITEMS.register("watery_graves", () -> new MusicDiscItem(0, SoundRegister.WATRY_GRAVES, new Item.Properties().stacksTo(1).tab(PVZItemGroups.PVZ_USEFUL).rarity(Rarity.RARE)));
-    public static final RegistryObject<Item> BRAINIAC_MANIAC = ITEMS.register("brainiac_maniac", () -> new MusicDiscItem(0, SoundRegister.BRAINIAC_MANIAC, new Item.Properties().stacksTo(1).tab(PVZItemGroups.PVZ_USEFUL).rarity(Rarity.RARE)));
-
-    public static final RegistryObject<Item> LOONBOON = ITEMS.register("loonboon", () -> new MusicDiscItem(0, SoundRegister.LOONBOON, new Item.Properties().stacksTo(1).tab(PVZItemGroups.PVZ_USEFUL).rarity(Rarity.RARE)));
 
 
-    public static final RegistryObject<Item> GRAZE_THE_ROOF = ITEMS.register("graze_the_roof", () -> new MusicDiscItem(0, SoundRegister.GRAZE_THE_ROOF, new Item.Properties().stacksTo(1).tab(PVZItemGroups.PVZ_USEFUL).rarity(Rarity.RARE)));
-
-    public static final RegistryObject<Item> ZOMBIE_ON_YOUR_LAWN = ITEMS.register("zombie_on_your_lawn", () -> new MusicDiscItem(0, SoundRegister.ZOMBIE_ON_YOUR_LAWN, new Item.Properties().stacksTo(1).tab(PVZItemGroups.PVZ_USEFUL).rarity(Rarity.RARE)));
-
-    public static final RegistryObject<Item> ZOMBIE_ON_YOUR_LAWN_TEST = ITEMS.register("zombie_on_your_lawn_test", () -> new MusicDiscItem(0, com.hungteen.pvz.common.misc.sound.SoundRegister.ZOMBIE_ON_YOUR_LAWN, new Item.Properties().stacksTo(1).tab(PVZItemGroups.PVZ_USEFUL).rarity(Rarity.RARE)));
 
     /**
      * register spawn eggs

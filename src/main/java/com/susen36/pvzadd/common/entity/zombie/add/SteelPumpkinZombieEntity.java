@@ -118,12 +118,12 @@ public class SteelPumpkinZombieEntity extends DefenceZombieEntity implements IHa
     }
     @Override
     public float getLife() {
-        return 200;
+        return 100;
     }
 
     @Override
     public float getOuterLife() {
-        return 250;
+        return 225;
     }
     @Override
     public SoundEvent getHurtSound(DamageSource damageSourceIn) {

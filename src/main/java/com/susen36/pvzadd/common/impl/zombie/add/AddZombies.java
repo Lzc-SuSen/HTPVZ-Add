@@ -9,6 +9,7 @@ import com.susen36.pvzadd.PVZAdd;
 import com.susen36.pvzadd.client.model.entity.zombie.add.AirborneZombieModel;
 import com.susen36.pvzadd.client.model.entity.zombie.add.FlowerPotZombieModel;
 import com.susen36.pvzadd.client.model.entity.zombie.add.MCZombieModel;
+import com.susen36.pvzadd.client.model.entity.zombie.add.TargetArrowZombieModel;
 import com.susen36.pvzadd.common.entity.EntityRegister;
 import com.susen36.pvzadd.common.misc.AddLoot;
 import net.minecraft.util.ResourceLocation;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public final class AddZombies extends com.hungteen.pvz.common.impl.zombie.ZombieType {
+public final class AddZombies extends ZombieType {
 	
 	private static final List<IZombieType> LIST = new ArrayList<>();
 	
@@ -48,7 +49,7 @@ public final class AddZombies extends com.hungteen.pvz.common.impl.zombie.Zombie
 			.rank(RankTypes.GREEN).xp(10)
 			.entityType(() -> EntityRegister.AIRBORNE_ZOMBIE.get())
 			.zombieModel(() -> AirborneZombieModel::new).scale(0.5F)
-			.loot(AddLoot.AirborneZombieEntity)
+			.loot(AddLoot.AIRBORNE_ZOMBIE)
 			.eatCommonSkill(Arrays.asList())
 	);
 
@@ -64,7 +65,14 @@ public final class AddZombies extends com.hungteen.pvz.common.impl.zombie.Zombie
 			.rank(RankTypes.BLUE).xp(25)
 			.entityType(() -> EntityRegister.STEEL_PUMPKIN_ZOMBIE.get())
 			.zombieModel(() -> MCZombieModel::new).scale(0.5F)
-			//.loot(AddLoot.MC_ZOMBIE)
+			.loot(AddLoot.STEEL_PUMPKIN_ZOMBIE)
+			.eatCommonSkill(Arrays.asList())
+	);
+	public static final ZombieType TARGET_ARROW_ZOMBIE = new AddZombies("target_arrow_zombie", new ZombieFeatures()
+			.rank(RankTypes.GREEN).xp(8)
+			.entityType(() -> EntityRegister.TARGET_ARROW_ZOMBIE.get())
+			.zombieModel(() -> TargetArrowZombieModel::new).scale(0.5F)
+			.loot(AddLoot.STEEL_PUMPKIN_ZOMBIE)
 			.eatCommonSkill(Arrays.asList())
 	);
 
